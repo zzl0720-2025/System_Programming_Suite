@@ -1,0 +1,3 @@
+fn add(x, y) = x + y;
+let total = add(8, 6) in
+if total > 10 then total * 3 else 0

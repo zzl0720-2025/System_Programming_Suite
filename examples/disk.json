@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "module": "disk",
+  "algorithm": "fifo",
+  "head": 50,
+  "requests": [
+    {
+      "arrival": 0,
+      "track": 10
+    },
+    {
+      "arrival": 0,
+      "track": 90
+    },
+    {
+      "arrival": 0,
+      "track": 55
+    },
+    {
+      "arrival": 5,
+      "track": 30
+    },
+    {
+      "arrival": 15,
+      "track": 80
+    }
+  ]
+}

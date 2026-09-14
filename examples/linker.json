@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "module": "linker",
+  "memory_limit": 256,
+  "modules": [
+    {
+      "name": "main",
+      "definitions": {
+        "start": 0
+      },
+      "code": [
+        {
+          "mode": "I",
+          "opcode": 1,
+          "value": 42
+        },
+        {
+          "mode": "E",
+          "opcode": 2,
+          "target": "add",
+          "value": 0
+        },
+        {
+          "mode": "M",
+          "opcode": 3,
+          "target": "math",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "math",
+      "definitions": {
+        "add": 0
+      },
+      "code": [
+        {
+          "mode": "R",
+          "opcode": 4,
+          "value": 1
+        },
+        {
+          "mode": "A",
+          "opcode": 5,
+          "value": 20
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "module": "vm",
+  "algorithm": "fifo",
+  "frames": 2,
+  "page_size": 4096,
+  "processes": [
+    {
+      "pid": 0,
+      "areas": [
+        {
+          "start": 0,
+          "end": 3
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "read_only": true
+        }
+      ]
+    },
+    {
+      "pid": 1,
+      "areas": [
+        {
+          "start": 0,
+          "end": 2,
+          "file_mapped": true
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "op": "write",
+      "pid": 0,
+      "address": 16
+    },
+    {
+      "op": "read",
+      "pid": 1,
+      "address": 16
+    },
+    {
+      "op": "read",
+      "pid": 0,
+      "address": 4096
+    },
+    {
+      "op": "read",
+      "pid": 0,
+      "address": 16
+    },
+    {
+      "op": "write",
+      "pid": 0,
+      "address": 12288
+    },
+    {
+      "op": "read",
+      "pid": 0,
+      "address": 24576
+    },
+    {
+      "op": "write",
+      "pid": 1,
+      "address": 0
+    },
+    {
+      "op": "exit",
+      "pid": 1
+    },
+    {
+      "op": "exit",
+      "pid": 0
+    }
+  ]
+}

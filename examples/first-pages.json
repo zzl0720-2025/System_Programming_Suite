@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "module": "memory",
+  "algorithm": "fifo",
+  "frames": 3,
+  "references": [1, 2, 3, 1, 4, 1, 2, 5, 1, 2, 3, 4]
+}

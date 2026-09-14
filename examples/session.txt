@@ -1,0 +1,10 @@
+config
+step 4
+state
+explain
+back 2
+set policy clock
+run
+compare
+sweep 2 3 4
+quit

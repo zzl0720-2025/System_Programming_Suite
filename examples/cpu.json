@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "module": "cpu",
+  "algorithm": "rr",
+  "quantum": 2,
+  "processes": [
+    {
+      "arrival": 0,
+      "priority": 1,
+      "bursts": [
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "arrival": 1,
+      "priority": 3,
+      "bursts": [
+        2
+      ]
+    },
+    {
+      "arrival": 2,
+      "priority": 2,
+      "bursts": [
+        3,
+        2,
+        1
+      ]
+    }
+  ]
+}

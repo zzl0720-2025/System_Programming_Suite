@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "module": "compiler",
+  "source": "fn add(x, y) = x + y;\nlet total = add(8, 6) in\nif total > 10 then total * 3 else 0\n",
+  "verify": true
+}

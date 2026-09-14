@@ -1,0 +1,12 @@
+/build/
+__pycache__/
+*.py[cod]
+*.cmi
+*.cmo
+*.cmx
+*.o
+*.a
+.DS_Store
+.env
+.env.*
+!.env.example

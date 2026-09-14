@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "module": "memory",
+  "algorithm": "nru",
+  "frames": 3,
+  "references": [1, 2, 3, 1, 4, 2, 5, 1, 3, 4, 2, 5],
+  "writes": [0, 3, 6, 9],
+  "seed": 42,
+  "reset_interval": 4,
+  "window": 4
+}
